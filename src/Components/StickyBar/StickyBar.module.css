@@ -1,0 +1,42 @@
+@import "../../index.css";
+
+.bottom__bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    height: 70px;
+    background-color: var(--blackColor);
+    border-top: 1px solid var(--goldVariant3);
+
+    position: fixed;
+    bottom: 0;
+}
+
+.bar__number, .bar__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bar__number ion-icon {
+    font-size: 28px;
+    color: var(--goldVariant2);
+}
+
+.bar__number span {
+    font-family: var(--secondaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: var(--goldVariant4);
+}
+
+.bar__links a ion-icon {
+    font-size: 24px;
+    color: var(--goldVariant2);
+}

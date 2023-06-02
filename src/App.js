@@ -6,6 +6,7 @@ import Gallery from './Pages/Gallery/Gallery';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
 import LiveEvents from './Pages/LiveEvents/LiveEvents';
+import StickyBar from './Components/StickyBar/StickyBar';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
@@ -34,14 +35,17 @@ const App = () => {
     <div className="app">
       <Navbar/>
       <div className="app__main">
-        <Routes>
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/menu" element={<Menu/>}/>
-          <Route exact path="/aboutus" element={<About/>}/>
-          <Route exact path="/events" element={<LiveEvents/>}/>
-          <Route exact path="/gallery" element={<Gallery/>}/>
-          <Route exact path="*" element={<PageNotFound/>}/>
-        </Routes>
+        <div className="main__center">
+          <Routes>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="/menu" element={<Menu/>}/>
+            <Route exact path="/aboutus" element={<About/>}/>
+            <Route exact path="/events" element={<LiveEvents/>}/>
+            <Route exact path="/gallery" element={<Gallery/>}/>
+            <Route exact path="*" element={<PageNotFound/>}/>
+          </Routes>
+          <StickyBar/>
+        </div>
       </div>
       <Footer/>
     </div>
