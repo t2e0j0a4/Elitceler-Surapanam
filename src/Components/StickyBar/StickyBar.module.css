@@ -2,6 +2,7 @@
 
 .bottom__bar {
     width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,8 +11,8 @@
     height: 70px;
     background-color: var(--blackColor);
     border-top: 1px solid var(--goldVariant3);
-
     position: fixed;
+    left: 0;
     bottom: 0;
 }
 

@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 1.6rem;
+    padding: 1.6rem 3rem;
     border-bottom: 1px solid #414141;
 }
 
@@ -52,10 +52,19 @@
     display: none;
 }
 
-@media all and (max-width : 650px) {
+@media all and (min-width : 1400px) {
+    .app__navbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        padding: 1.6rem 10rem;
+    }
+}
+
+@media all and (max-width : 700px) {
 
     .app__navbar {
-        padding: 1rem;
+        padding: 1.2rem;
         position: relative;
     }
 
@@ -63,7 +72,7 @@
         position: fixed;
         z-index: 9999;
         width: 100%;
-        height: 87vh;
+        height: 92vh;
         top: -900px;
         left: 0;
         background-color: var(--blackColor);
@@ -71,6 +80,10 @@
         flex-direction: column;
         gap: 1.6rem;
         transition: top 0.4s linear;
+    }
+
+    .menu__item a {
+        font-size: 20px;
     }
 
     .menu__active {
