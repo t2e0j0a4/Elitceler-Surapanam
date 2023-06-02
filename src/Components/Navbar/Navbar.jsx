@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from "./Navbar.module.css";
 import Logo from "../../Assets/SurapanamLogo.svg";
@@ -7,6 +7,9 @@ const Navbar = () => {
   const location = useLocation();
   const { app__navbar, navbar__logo, logo__img, navbar__menu, menu__active, menu__item, item__selected, navbar__toggler } = styles;
   const [menuToggle, setMenuToggle] = useState(false);
+  useEffect(() => {
+    document.body.style.overflowY = menuToggle ? 'hidden' : 'auto';
+  }, [menuToggle]);
 
   return (
     <nav className={app__navbar}>
