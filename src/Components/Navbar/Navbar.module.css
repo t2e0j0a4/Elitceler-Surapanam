@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.2rem;
+    gap: 2rem;
 }
 
 .menu__item a {
@@ -69,6 +69,7 @@
         background-color: var(--blackColor);
         display: flex;
         flex-direction: column;
+        gap: 1.6rem;
         transition: top 0.4s linear;
     }
 
