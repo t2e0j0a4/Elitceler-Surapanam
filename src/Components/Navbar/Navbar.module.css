@@ -11,6 +11,7 @@
     align-items: center;
     gap: 1rem;
     padding: 1.6rem;
+    border-bottom: 1px solid #414141;
 }
 
 .navbar__logo {
