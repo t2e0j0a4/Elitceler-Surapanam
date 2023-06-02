@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap');
+
+:root {
+
+  /* Font Families */
+  --primaryFont : 'Baskervville', serif;
+  --secondaryFont : 'Inter', sans-serif;
+
+  /* Colors */
+  --grayColor : #414141;
+  --blackColor : #070707;
+  --whiteColor : #FDFDFD;
+  
+  --goldColor : #C49C4D;
+  /* Gold Variants */
+  --goldVariant1 : #A67838;
+  --goldVariant2 : #8D6734;
+  --goldVariant3 : #D7B777;
+  --goldVariant4 : #EAD3A6;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
