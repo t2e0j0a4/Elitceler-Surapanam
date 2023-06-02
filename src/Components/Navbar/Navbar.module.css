@@ -1,0 +1,104 @@
+@import '../../index.css';
+
+.app__navbar {
+    width: 100%;
+    max-width: 100%;
+    height: 76px;
+    background-color: var(--blackColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.6rem;
+}
+
+.navbar__logo {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.logo__img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.menu__item a {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--whiteColor);
+    transition: color 0.2s linear, transform 0.2s linear;
+}
+
+.menu__item a:hover, .menu__item a.item__selected {
+    color: var(--goldVariant3);
+    transform: scale(0.96);
+}
+
+.navbar__toggler {
+    display: none;
+}
+
+@media all and (max-width : 650px) {
+
+    .app__navbar {
+        padding: 1rem;
+        position: relative;
+    }
+
+    .navbar__menu {
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 87vh;
+        top: -900px;
+        left: 0;
+        background-color: var(--blackColor);
+        display: flex;
+        flex-direction: column;
+        transition: top 0.4s linear;
+    }
+
+    .menu__active {
+        top: 76px;
+    }
+
+    .navbar__toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar__toggler button {
+        padding: 4px 6px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .navbar__toggler button ion-icon {
+        font-size: 28px;
+        color: var(--goldVariant4);
+        transition: color 0.4s linear;
+    }
+
+    .navbar__toggler button ion-icon:hover {
+        color: var(--goldVariant3);
+    }
+}
