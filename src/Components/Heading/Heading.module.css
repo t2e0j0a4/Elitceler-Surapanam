@@ -1,0 +1,17 @@
+@import "../../index.css";
+
+.app__heading {
+    text-align: left;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 26px;
+    color: var(--goldVariant3);
+}
+
+@media all and (max-width : 500px) {
+    .app__heading {
+        font-size: 22px;
+    }
+}
