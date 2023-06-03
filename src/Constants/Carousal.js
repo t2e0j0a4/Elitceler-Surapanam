@@ -20,4 +20,23 @@ const homeLanding = [
     }   
 ]
 
-export {homeLanding};
+const homeSpecialCombos = [
+    {
+        id : 1,
+        image : Land1
+    },
+    {
+        id : 2,
+        image : Land2
+    },
+    {
+        id : 3,
+        image : Land1
+    },
+    {
+        id : 4,
+        image : Land2
+    }   
+]
+
+export {homeLanding, homeSpecialCombos};

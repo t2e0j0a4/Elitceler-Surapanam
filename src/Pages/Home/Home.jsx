@@ -2,13 +2,13 @@ import React from 'react'
 import styles from "./Home.module.css";
 import { Link } from 'react-router-dom';
 import Carousal from '../../Components/Carousal/Carousal';
-import { homeLanding } from '../../Constants/Carousal';
+import { homeLanding, homeSpecialCombos } from '../../Constants/Carousal';
 import Heading from '../../Components/Heading/Heading';
 import { homeBestSellersDemo } from '../../Constants/PageParts';
 
 const Home = () => {
 
-  const { app__home, home__section1, section1__redirects, redirect__link, home__section2, section2__head, section2__content, seller__box } = styles;
+  const { app__home, home__section1, section1__redirects, redirect__link, home__section2, section2__head, section2__content, seller__box, home__section3, section3__head, section3__content } = styles;
 
   return (
     <div className={app__home}>
@@ -53,6 +53,24 @@ const Home = () => {
       </div>
 
       {/* Section 2 - Best Sellers Few */}
+
+      {/* Section 3 - Special Combos */}
+
+      <div className={home__section3}>
+
+        {/* Section 3 Heading */}
+        <div className={section3__head}>
+          <Heading head={"Day's Special Combos"} />
+        </div>
+
+        {/* Section 3 Content */}
+        <div className={section3__content}>
+          <Carousal source={homeSpecialCombos} />
+        </div>
+
+      </div>
+
+      {/* Section 3 - Special Combos */}
 
     </div>
   )
