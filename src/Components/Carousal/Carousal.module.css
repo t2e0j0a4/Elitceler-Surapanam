@@ -15,7 +15,7 @@
 
 .carousal__img img  {
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     object-fit: cover;
 }
 

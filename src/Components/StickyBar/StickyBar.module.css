@@ -13,6 +13,7 @@
     border-top: 1px solid var(--goldVariant3);
     position: fixed;
     left: 0;
+    z-index: 99;
     bottom: 0;
 }
 

@@ -25,8 +25,25 @@ const homeBestSellersDemo = [
         title : 'Chicken Poppers',
         image : Dummy2,
         price : 150
-    },
-    
+    }
 ]
 
-export {homeBestSellersDemo};
+const homeHappyCustomers = [
+    {
+        id : 1,
+        review : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+        name : 'John Doe'
+    },
+    {
+        id : 2,
+        review : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+        name : 'Jack Ill'
+    },
+    {
+        id : 3,
+        review : '“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”',
+        name : 'Smith Jan'
+    },
+]
+
+export {homeBestSellersDemo, homeHappyCustomers};
