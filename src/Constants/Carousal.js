@@ -1,5 +1,5 @@
-import Land1 from "../Assets/LandingDummy.jpg";
-import Land2 from "../Assets/LandingDummy2.jpg";
+import Land1 from "../Assets/DummyLanding1.png";
+import Land2 from "../Assets/DummyLanding2.png";
 
 const homeLanding = [
     {

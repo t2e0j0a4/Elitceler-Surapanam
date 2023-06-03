@@ -1,4 +1,4 @@
-import Dummy1 from "../Assets/DummyDIsh1.png";
+import Dummy1 from "../Assets/DummyDish1.png";
 import Dummy2 from "../Assets/DummyDish2.png";
 
 const homeBestSellersDemo = [
