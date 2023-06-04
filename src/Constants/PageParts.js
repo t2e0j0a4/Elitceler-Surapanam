@@ -1,4 +1,4 @@
-import event from "../Assets/HomeEventDummy.png";
+import event from "../Assets/EventDummy.png";
 
 const homeBestSellersDemo = [
     {
