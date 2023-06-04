@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Inter&display=swap');
 
 :root {
 
   /* Font Families */
-  --primaryFont : 'Baskervville', serif;
+  --primaryFont : 'Cormorant Upright', serif;
   --secondaryFont : 'Inter', sans-serif;
 
   /* Colors */
