@@ -30,7 +30,7 @@ const Home = () => {
       {/* Section 1 - Landing Carousal & Redirect Links */}
 
       <div className={home__section1}>
-        <Carousal source={homeLanding}/>
+        <Carousal source={homeLanding} type="fullfill" />
         <div className={section1__redirects}>
           <Link to='/menu' className={redirect__link}>Our Menu</Link>
           <Link to='/gallery' className={redirect__link}>Our Gallery</Link>
@@ -79,7 +79,7 @@ const Home = () => {
 
         {/* Section 3 Content */}
         <div className={section3__content}>
-          <Carousal source={homeSpecialCombos} />
+          <Carousal source={homeSpecialCombos} type="halffill" />
         </div>
 
       </div>

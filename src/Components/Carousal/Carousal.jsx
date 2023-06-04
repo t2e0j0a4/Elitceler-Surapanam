@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import styles from "./Carousal.module.css";
 
-const Carousal = ({ source }) => {
+const Carousal = ({ source, type }) => {
     
-    const { app__carousal, carousal__img, carousal__tips, item__tip, tip__selected } = styles;
+    const { app__carousal, carousal__fimg, carousal__simg, carousal__tips, item__tip, tip__selected } = styles;
     const [sourceLength] = useState(source.length);
     const [current, setCurrent] = useState(0);
 
@@ -15,7 +15,7 @@ const Carousal = ({ source }) => {
 
     return (
         <div className={app__carousal}>
-            <div className={carousal__img}>
+            <div className={`${type === 'fullfill' ? carousal__fimg : carousal__simg}`}>
                 <img src={source[current].image} alt='Carousal' />
             </div>
 

@@ -37,7 +37,7 @@
     object-fit: cover;
 }
 
-.each__tip a {
+.each__tip span {
     font-family: var(--primaryFont);
     text-align: center;
     display: inline-flex;
@@ -50,7 +50,7 @@
     transition: all 0.2s linear;
 }
 
-.each__tip a:hover {
+.each__tip:hover span {
     color: var(--whiteColor);
 }
 
@@ -106,7 +106,7 @@
         height: 120px;
     }
 
-    .each__tip a {
+    .each__tip span {
         font-size: 21px;
     }
 
@@ -125,7 +125,7 @@
         height: 100px;
     }
 
-    .each__tip a {
+    .each__tip span {
         font-size: 20px;
     }
 }

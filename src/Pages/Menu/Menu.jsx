@@ -17,10 +17,10 @@ const Menu = () => {
         {
           menu.menuTips.map((item) => {
             return (
-              <div key={item.id} className={each__tip}>
+              <a href={`#${item.tipName}`} key={item.id} className={each__tip}>
                 <img src={item.tipImage} alt={item.tipName} />
-                <a href={`#${item.tipName}`}>{item.tipName}</a>
-              </div>
+                <span>{item.tipName}</span>
+              </a>
             )
           })
         }

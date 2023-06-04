@@ -15,7 +15,7 @@ const About = () => {
       {/* Section 1 - Carousal */}
 
       <div className={about__carousal}>
-        <Carousal source={aboutLanding} />
+        <Carousal source={aboutLanding} type="fullfill" />
       </div>
 
       {/* Section 1 - Carousal */}
