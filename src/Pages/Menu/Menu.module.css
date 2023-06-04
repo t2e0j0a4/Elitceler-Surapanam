@@ -1,0 +1,171 @@
+@import "../../index.css";
+
+.app__menu {
+    width: 1200px;
+    max-width: 100%;
+    margin: 2rem auto;
+    height: 100%;
+}
+
+.menu__tips {
+    width: 100%;
+    margin: 5rem auto;
+    display: flex;
+    padding: 0 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.each__tip {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.each__tip img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--whiteColor);
+    object-fit: cover;
+}
+
+.each__tip a {
+    font-family: var(--primaryFont);
+    text-align: center;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 24px;
+    color: #9f9f9fcb;
+    transition: all 0.2s linear;
+}
+
+.each__tip a:hover {
+    color: var(--whiteColor);
+}
+
+.menu__posters {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.each__poster {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.each__poster .poster__head {
+    text-align: center;
+}
+
+.each__poster img {
+    width: 700px;
+    max-width: 100%;
+}
+
+.go__back {
+    padding: 0 1rem;
+}
+
+@media all and (max-width : 1024px) {
+    .each__tip {
+        width: 180px;
+    }
+}
+
+@media all and (max-width : 700px) {
+
+    .each__tip {
+        width: 150px;
+    }
+
+    .each__tip img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .each__tip a {
+        font-size: 21px;
+    }
+
+    .go__back {
+        padding: 0;
+    }
+}
+
+@media all and (max-width : 500px) {
+    .each__tip {
+        width: 120px;
+    }
+
+    .each__tip img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .each__tip a {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width : 456px) {
+    .menu__tips {
+        gap: 2rem 1rem;
+    }
+
+    .each__tip {
+        width: 100px;
+    }
+
+    .each__tip img {
+        width: 100%;
+    }
+}
+
+@media all and (max-width : 364px) {
+
+    .menu__tips {
+        margin: 1rem auto 3rem;
+    }
+
+    .each__tip {
+        width: 120px;
+    }    
+
+    .each__tip img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media all and (max-width : 300px) {
+    .each__tip {
+        width: 100px;
+    }    
+
+    .each__tip img {
+        width: 80px;
+        height: 80px;
+    }
+}
