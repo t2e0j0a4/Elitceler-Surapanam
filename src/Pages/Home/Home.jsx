@@ -105,7 +105,7 @@ const Home = () => {
                 return (
                   <div key={item.id} className={track4__item} style={{ transform: `translateX(-${movefreq * baseMove}%)`, transition : 'transform 0.3s linear' }}>
                     <p>{item.review}</p>
-                    <p>{item.name}</p>
+                    <p>- {item.name}</p>
                   </div>
                 )
               })

@@ -37,7 +37,7 @@
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 26px;
     color: var(--whiteColor);
     transition: color 0.2s linear, transform 0.2s linear;
@@ -80,10 +80,6 @@
         flex-direction: column;
         gap: 1.6rem;
         transition: top 0.4s linear;
-    }
-
-    .menu__item a {
-        font-size: 20px;
     }
 
     .menu__active {

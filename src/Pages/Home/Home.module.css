@@ -152,8 +152,8 @@
     height: 100%;
     position: absolute;
     inset: 0;
-    background-color: #141414;
-    opacity: 0.33;
+    background-color: #0b0b0b;
+    opacity: 0.5;
     z-index: 0;
 }
 
@@ -188,8 +188,8 @@
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 22px;
+    line-height: 28px;
     width: 800px;
     max-width: 96%;
     text-align: center;
@@ -246,7 +246,7 @@
     font-weight: 400;
     width: 600px;
     max-width: 100%;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 28px;
     text-align: center;
     color: var(--whiteColor);
@@ -281,7 +281,7 @@
     }
 
     .track4__item p {
-        font-size: 18px;
+        font-size: 22px;
     }
 
     /* Section 4 */
@@ -319,7 +319,7 @@
     /* Section 5 */
     
     .section5__content p {
-        font-size: 16px;
+        font-size: 20px;
         line-height: 24px;
     }
 
