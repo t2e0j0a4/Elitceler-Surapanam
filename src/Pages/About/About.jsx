@@ -2,11 +2,12 @@ import React from 'react'
 import styles from "./About.module.css";
 import Carousal from '../../Components/Carousal/Carousal';
 import Heading from '../../Components/Heading/Heading';
+import BackHome from '../../Components/BackHome/BackHome';
 import { aboutLanding } from '../../Constants/Carousal';
  
 const About = () => {
 
-  const {app__about, about__carousal, about__description, description} = styles;
+  const {app__about, about__carousal, about__description, description, go__back} = styles;
 
   return (
     <div className={app__about}>
@@ -30,6 +31,14 @@ const About = () => {
       </div>
 
       {/* Section 2 - About Us Description */}
+
+      {/* Back Home */}
+
+      <div className={go__back}>
+        <BackHome/>
+      </div>
+
+      {/* Back Home */}
 
     </div>
   )

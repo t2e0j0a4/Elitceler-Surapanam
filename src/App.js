@@ -27,6 +27,7 @@ const App = () => {
   useEffect(() => {
     let currentPageName = location.pathname.replace('/', '');
     document.title = currentPageName ? `Surapanam | ${makeWordCaptialize(currentPageName)}` : 'Surapanam | Bar & Kitchen';
+    window.scrollTo({top : 0, behavior : 'smooth'});
   }, [location]);
 
   // ****** Pages Title Setup ******
