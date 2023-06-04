@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className={app__footer}>
       <img src={Logo} alt='Surapanam' />
       <div className={footer__socials}>
-        <a href="/"><ion-icon name='logo-instagram'></ion-icon></a>
+        <a href="https://www.instagram.com/surapanamhyd/" rel="noopener" target="_blank"><ion-icon name='logo-instagram'></ion-icon></a>
         <a href="/"><ion-icon name='logo-whatsapp'></ion-icon></a>
       </div>
       <div className={app__copyright}>
