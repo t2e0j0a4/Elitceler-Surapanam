@@ -1,3 +1,5 @@
+import event from "../Assets/HomeEventDummy.png";
+
 const homeBestSellersDemo = [
     {
         id : 1,
@@ -158,4 +160,36 @@ const galleryBox = [
     
 ]
 
-export {homeBestSellersDemo, homeHappyCustomers, galleryBox, bestSellers};
+const liveEvents = {
+
+    // This appears on both Home & Events Page.
+    currentEvent : {
+        id : 1,
+        poster : event,
+        description : 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    },
+
+    // Only on Events Page.
+    upcomingEvents : [
+        {
+            id : 1,
+            poster : event,
+            description : 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        },
+        {
+            id : 2,
+            poster : event,
+            description : 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+        }
+    ],
+
+    // Only on Events Page.
+    pastEvents : {
+        id : 1,
+        poster : event,
+        description : 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    }
+
+}
+
+export {homeBestSellersDemo, homeHappyCustomers, galleryBox, bestSellers, liveEvents};

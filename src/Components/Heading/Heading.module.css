@@ -5,13 +5,13 @@
     font-family: var(--primaryFont);
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 36px;
     line-height: 26px;
     color: var(--goldVariant3);
 }
 
 @media all and (max-width : 500px) {
     .app__heading {
-        font-size: 24px;
+        font-size: 28px;
     }
 }

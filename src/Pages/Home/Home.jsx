@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import styles from "./Home.module.css";
-import event from "../../Assets/HomeEventDummy.png";
 import Heading from '../../Components/Heading/Heading';
 import Carousal from '../../Components/Carousal/Carousal';
 import { homeLanding, homeSpecialCombos } from '../../Constants/Carousal';
-import { homeBestSellersDemo, homeHappyCustomers } from '../../Constants/PageParts';
+import { homeBestSellersDemo, homeHappyCustomers, liveEvents } from '../../Constants/PageParts';
 
 const Home = () => {
 
@@ -128,8 +127,8 @@ const Home = () => {
 
         {/* Section 5 Content */}
         <div className={section5__content}>
-          <img src={event} alt="Event" />
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <img src={liveEvents.currentEvent.poster} alt="Event" />
+          <p>{liveEvents.currentEvent.description}</p>
         </div>
 
       </div>
