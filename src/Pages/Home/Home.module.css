@@ -66,6 +66,7 @@
 }
 
 .section2__content {
+    width: 100%;
     padding: 2rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -311,6 +312,10 @@
 
     .section2__content::-webkit-scrollbar {
         height: 0;
+    }
+
+    .seller__box {
+        width: 300px;
     }
 
     /* Section 2 */

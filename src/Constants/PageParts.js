@@ -43,6 +43,81 @@ const homeHappyCustomers = [
     },
 ]
 
+const bestSellers = [
+    {
+        id : 1,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 2,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 3,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 4,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 5,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 6,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 7,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 8,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 9,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 10,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 11,
+        title : 'Sweet Potato Fries',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    },
+    {
+        id : 12,
+        title : 'Chicken Poppers',
+        image : 'https://images.unsplash.com/photo-1500217052183-bc01eee1a74e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTQwNDF8MHwxfHNlYXJjaHwxNHx8YmFyJTIwfGVufDB8fHx8MTY4NTg2OTIxN3ww&ixlib=rb-4.0.3&q=80&w=1080',
+        price : 150
+    }
+]
+
 const galleryBox = [
     {
         id : 1,
@@ -83,4 +158,4 @@ const galleryBox = [
     
 ]
 
-export {homeBestSellersDemo, homeHappyCustomers, galleryBox};
+export {homeBestSellersDemo, homeHappyCustomers, galleryBox, bestSellers};

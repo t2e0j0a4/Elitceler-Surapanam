@@ -1,1 +1,113 @@
 @import "../../index.css";
+
+.app__sellers {
+    width: 1200px;
+    max-width: 100%;
+    margin: 2rem auto;
+    height: 100%;
+}
+
+.sellers__head {
+    width: 100%;
+    max-width: 100%;
+    margin: 3rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.sellers__content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+
+.sellers__track {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.seller__box {
+    height: 240px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 8px;
+    gap: 0.6rem;
+}
+
+.seller__box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.seller__box p {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--whiteColor);
+}
+
+@media all and (max-width : 1218px) {
+
+    .sellers__track {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .seller__box {
+        height: 320px;
+    }
+
+    .seller__box img {
+        height: 240px;
+    }
+
+}
+
+@media all and (max-width : 700px) {
+
+    .sellers__track {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1.4rem;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .sellers__track::-webkit-scrollbar {
+        height: 0;
+    }
+
+    .seller__box {
+        width: 300px;
+        height: 320px;
+    }
+
+}
+
+@media all and (max-width : 500px) {
+
+    .seller__box {
+        width: 220px;
+        height: 100%;
+    }
+
+    .seller__box img {
+        width: 100%;
+        height: 200px;
+    }
+
+}
