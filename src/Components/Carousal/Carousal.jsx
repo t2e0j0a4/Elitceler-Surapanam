@@ -8,7 +8,7 @@ const Carousal = ({ source, type }) => {
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
-        const intervalID = setInterval(() => {setCurrent((now) => now + 1 === sourceLength ? 0 : now + 1)}, 8000);
+        const intervalID = setInterval(() => {setCurrent((now) => now + 1 === sourceLength ? 0 : now + 1)}, 3000);
         return (() => clearInterval(intervalID));
         // eslint-disable-next-line
     }, [current]);
