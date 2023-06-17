@@ -193,54 +193,59 @@ const liveEvents = {
 }
 
 const menu = {
+  menuTips: [
+    {
+      id: 1,
+      tipImage:
+        "https://s3-alpha-sig.figma.com/img/6e79/7523/0f238c8fd9b609e8b4df141997a94fc7?Expires=1687737600&Signature=kTUd9SbnkxhQoI-3Ml4fzs5CogAlU2-eIjtsEF0xkSx2eXmS805OeKALvf83WWrSfaOp8gifWjFUmz6U7MM~YIMgvWML~RO0q72jjt7fpz0NZ4GS1DI541Gh8jnwJNKMf2j5Z0rRzQEGWiOrI3ZeTS9QZXDVwbiU0EELraZzeWdFUJs-1mHrWGkGck4Wwh29Iw5tqBVua3vzsod7rYbW09zEuRqvE9P-7GFZf8iz9xD4f5l83GdDTRWeIS8T1aZiSNCk6pa7r4JKqKLeZgw2dI23XjMA9Ec6yctlPUmQknD2eR3AbG3aNlayrl9Ti9PHS4KW3ZsGP7JKwzeDVRWBZg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      tipName: "Starters",
+    },
+    {
+      id: 2,
+      tipImage:
+        "https://s3-alpha-sig.figma.com/img/6047/0133/e3129c7b5a94c75529a3b41c5a4a06e7?Expires=1687737600&Signature=BeTRqQabRpN5Db5dwmzadnsaw8DSY-jsGuVBGE7atOwAu-ushU-lytc2T2DuldNvOYqT7Bg4CZ6-8VyjRgvqZflHceJ6Q6IWNzWcFBZ0WwzMAAgtrArEEO3IaUSRvQ43keWofM2VxJRcmweo9QNRogNMvgrzc3RzNrzxcrjYH5zlTSziyZfC-6IGS9Uy-AIfVeEsprrfSBhyP5M8lwl3op9~1UbVkAi~tCAVGzw6DCMNodffNR9iZZTMoT1xcC8nAan0mu8LvY1Bw3gaXVvbeJD-M4RuE~tRELDvAemfsUQMNAjj0cu87KJAxnYFZJlfXsaSlKOjdToqfwZ583wjiA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      tipName: "Drinks",
+    },
+    {
+      id: 3,
+      tipImage:
+        "https://s3-alpha-sig.figma.com/img/46aa/b581/d7e75218eab5df01ae355f0c1e5fcb5a?Expires=1687737600&Signature=FzdD9P0PsHHeI42Y7RTH4ktDKcr5CoSkdR6qY5ZVzL3UnEzJMEfRZboAmU-Awk38AXkBe3qfnwyJwN-RJsu-pIbybxsOxf9G1GoY50EJlVwfvmCX4MTLsmISDKM7V7wY-XeRpu5OVItaYMMYyhB-0isgaQMxR~gkwjfIw02fTceiqdFh5swue6B~3CufvQtU5fjKHDyw-eeTG7cplqireIvrxZq9TV4fJSwFZgodmvECIDYzCIeXAUXO7-vQUkr1e~vrBm-C9LLnv8bfxWi6KGoTyGgRVuFjDA2Bz40GY8FCWTjL7SZcJuDq2jZcTVqJjnRzU1ruoWYiQNxeN88APg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      tipName: "Main Course",
+    },
+    {
+      id: 4,
+      tipImage:
+        "https://s3-alpha-sig.figma.com/img/3854/1889/8dc799218bfe4b99b2b57dbb5aded298?Expires=1687737600&Signature=n6jPRXFI4B5mfp24L4bpHUURXXHdew2MmLy5jQ4wEL7ZUvqxjmkoJmZAcqUNR5ziLElLUQe2u1vOe3KXyMZyKefgWM~5D6FU-vOkc3cH~65M~pXwH~8wGJkUwnf0UcE~aaTsXC1rU-Plzhq1lyrXzC0Gu~M1kz0Xmov9BZU-5ekzJTTdDUog3HFycEVV1dWcaCtInxLNa-xDGuzFLVsPPtKOzWEyMhZinIJoQabZDlayy8488fDsTv4epBcW0xhkoCOTnee4GnjEeZJAneK6zxH0ikvcRA5Nok0Zh4ckfry1hoawYlAIsAIc5iTXAXKsZ54MCZ7OnRXBEIqgzmbShg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      tipName: "Desserts",
+    },
+  ],
 
-    menuTips : [
-        {
-            id : 1,
-            tipImage : "https://s3-alpha-sig.figma.com/img/6e79/7523/0f238c8fd9b609e8b4df141997a94fc7?Expires=1686528000&Signature=R6lWl9MdbPcV-uJlDmvP2cKqc2XJP4DX3tySiKiuP6~cyQI4ZhSeIJ6SzCzZZrF4T6nCXPYMAtYYltvN9~eF5Dc-zMyk-HUfU7Yoq3XixMhiZ7132RmSMaYpzrhZWm~T7LLRO51Cyxh-ng56gEnHM91qyIHyZJo9TgG1snjlw8woV6yiykbmEhG~86Hs~uxpCcJbGw5PEVIUbs2KQwgaV4JNX2ZxhASwtQPOCXHKKOjcjwtXLyN7N5TqO~ce2y6FeN6omzoCGVmpCuM21ZLYEY9MSVTHY9YSF6wJjgic3nX2CWrrlm-FBCPQeI8woUxucK59oVPjHxMq8U6jUGZxMg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            tipName : 'Starters'
-        },
-        {
-            id : 2,
-            tipImage : "https://s3-alpha-sig.figma.com/img/6047/0133/e3129c7b5a94c75529a3b41c5a4a06e7?Expires=1686528000&Signature=FrmcwI8pIBzSUfzVnsOZrK9Hed0E~cfn4k32~BqJOlRcS6gGu5bXJzlXfCSBrv~jRIqF5npfGTSSsO~RJMMwWBs-3Tw~LDUrZSRmtUHbkMdzfGYec9O4fht2caR6RZBnOrY7o90m4xsv4KeEydu3vm1SHsuhyHTxVVLVxpZLSc2xfLwjqf4HnhgtgrIoPEcFVrVmyI5rQr6WbjxPslcAW91nM6Y7NQ1E~lAgidPv35QuCPaI5FV94~NCkKM-u86O2g5sfe2S25l73ylEoy7z-vpuvEmwErD1786tgXPZCUTg6zgj8-FOobA0Ju6YvMuSl5mGoIrSaG1Fk4tnub1RVA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            tipName : 'Drinks'
-        },
-        {
-            id : 3,
-            tipImage : "https://s3-alpha-sig.figma.com/img/46aa/b581/d7e75218eab5df01ae355f0c1e5fcb5a?Expires=1686528000&Signature=RlwpjRF1OPVU2q8P6JldDHGU8ajSGenhKLFXVTaILIg15PYuHXMbhgX6InGRGyco2KSP84t-Sk-R2whgifKP03Y3Cp1rd-SFdzWW4988yYQovUZFKQ9BZUMNYWZHILAJRHuBrcPka6qctHy9sy0DcVAW6syRoPD76gIbu7ngMHTRRST2rNDBZ-KopbQqKow7OG3pcXC4ZeH1OGnS9r~GZ2dYN-ejVGBWS~gqPS6gW91ebkmDXsCr8wa7vUwfWyH6tPWY57KhwqDtXNPH5-K-3eKDHYxUvO1XhJ5fBfv189g0sYZa-LA1lIT373a0elE9uHrxk9c-0G5Ovm2DMIbHmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            tipName : 'Main Course'
-        },
-        {
-            id : 4,
-            tipImage : "https://s3-alpha-sig.figma.com/img/3854/1889/8dc799218bfe4b99b2b57dbb5aded298?Expires=1686528000&Signature=G3SOjosDUIeLZapyq6aWo6MdhBSfATUwHESNm69rceQf8oK34qbUXtyx8XzTXMqOcDouZ7rpT5mqUY~eKlfJoETyCdIv5Zejj5urwce5o8GJwmSiuW5N8KeovoSgv~kYHLUtGClwzxnO5y9TpFFHiLqBnMq7x-4h85BeUYt~lmeqFBbfOEZ43J6ijOvSnVFJAgIkVDB7NHHNhNCqrcg00i4srH-Q4s7dJ-ER8Z5IX8t4vrcE1Nx9kS~qjbAFvPzFUJcf-klzJrQhdG~Iq-BRP5ykFJf3U1ZhRhiEGY1sZ~sti81a2g5Mg16Q6cGT9J5bDIcFOnzWMfZNE7EXW5Vd0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            tipName : 'Desserts'
-        }
-    ],
-
-    menuPosters : [
-        {
-            id : 1,
-            menuPoster : "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1686528000&Signature=Zi~6ufKZY9mwqVFWs6YT7yCJf7raSAiY7JgSIV7TZjgu~zLym~Ayj6iuxpXStgrJO470cR~kWEEqeYsORlXv-77oTdyLcJztsRcU9xbV3zxqmRI-FrdB6U40NekGoo1loRCnWJ4vtcs2Zwh92RqGU5QeV28HTiXWTNJFlpYkzIkoSWGvWQ~P3bubjf5vFe5Bae6nMm55NjQ9tIurb0YSTmi~NHc6NYCHNlNTEV5e8qNl-cnIC~nnmkRRi-pSEV-KvyAi9ZuYarI1OE6GgkdpAc0IOtPJyoQJig3or2IjwMloDuOl-~7jis-NLPFOzoR62U6s4S52tYx185i0JhI8Kw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            menuFor : 'Starters'
-        },
-        {
-            id : 2,
-            menuPoster : "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1686528000&Signature=Zi~6ufKZY9mwqVFWs6YT7yCJf7raSAiY7JgSIV7TZjgu~zLym~Ayj6iuxpXStgrJO470cR~kWEEqeYsORlXv-77oTdyLcJztsRcU9xbV3zxqmRI-FrdB6U40NekGoo1loRCnWJ4vtcs2Zwh92RqGU5QeV28HTiXWTNJFlpYkzIkoSWGvWQ~P3bubjf5vFe5Bae6nMm55NjQ9tIurb0YSTmi~NHc6NYCHNlNTEV5e8qNl-cnIC~nnmkRRi-pSEV-KvyAi9ZuYarI1OE6GgkdpAc0IOtPJyoQJig3or2IjwMloDuOl-~7jis-NLPFOzoR62U6s4S52tYx185i0JhI8Kw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            menuFor : 'Drinks'
-        },
-        {
-            id : 3,
-            menuPoster : "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1686528000&Signature=Zi~6ufKZY9mwqVFWs6YT7yCJf7raSAiY7JgSIV7TZjgu~zLym~Ayj6iuxpXStgrJO470cR~kWEEqeYsORlXv-77oTdyLcJztsRcU9xbV3zxqmRI-FrdB6U40NekGoo1loRCnWJ4vtcs2Zwh92RqGU5QeV28HTiXWTNJFlpYkzIkoSWGvWQ~P3bubjf5vFe5Bae6nMm55NjQ9tIurb0YSTmi~NHc6NYCHNlNTEV5e8qNl-cnIC~nnmkRRi-pSEV-KvyAi9ZuYarI1OE6GgkdpAc0IOtPJyoQJig3or2IjwMloDuOl-~7jis-NLPFOzoR62U6s4S52tYx185i0JhI8Kw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            menuFor : 'Main Course'
-        },
-        {
-            id : 4,
-            menuPoster : "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1686528000&Signature=Zi~6ufKZY9mwqVFWs6YT7yCJf7raSAiY7JgSIV7TZjgu~zLym~Ayj6iuxpXStgrJO470cR~kWEEqeYsORlXv-77oTdyLcJztsRcU9xbV3zxqmRI-FrdB6U40NekGoo1loRCnWJ4vtcs2Zwh92RqGU5QeV28HTiXWTNJFlpYkzIkoSWGvWQ~P3bubjf5vFe5Bae6nMm55NjQ9tIurb0YSTmi~NHc6NYCHNlNTEV5e8qNl-cnIC~nnmkRRi-pSEV-KvyAi9ZuYarI1OE6GgkdpAc0IOtPJyoQJig3or2IjwMloDuOl-~7jis-NLPFOzoR62U6s4S52tYx185i0JhI8Kw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            menuFor : 'Desserts'
-        },
-        
-    ]
-    
-}
+  menuPosters: [
+    {
+      id: 1,
+      menuPoster:
+        "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1687737600&Signature=QY7zpBvoF1nsAxi3wxLkpomH3kLsFYJQIYSqPEgzOWaGmUfKkGjvZYq7XaAVagW-G9WQTKfLaDoSR1tp7GbHUt1TBeu5H3Kziv~VEd8tpEn4EsQpmP~GM6G-oAbeMlphTiA-lZkVUFzLwrx~bhj0dv5ttqgT83BoyYMdEJVBgX4IsDjEkI6a1SaURsBHo28VWQhAVLr2qByTuamQ~EQdZwiEV5bj75n-iOLfuSGMGOKBv46Oyh5PCZ0L2nYRoTJBlGD60rws313HOSTTr8qeha83AvI1uOMGkzGGGTAscX4ebWl7oicSkFrNDF~BrWFcDPsVvZhjQeNCYDqPybGv8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      menuFor: "Starters",
+    },
+    {
+      id: 2,
+      menuPoster:
+        "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1687737600&Signature=QY7zpBvoF1nsAxi3wxLkpomH3kLsFYJQIYSqPEgzOWaGmUfKkGjvZYq7XaAVagW-G9WQTKfLaDoSR1tp7GbHUt1TBeu5H3Kziv~VEd8tpEn4EsQpmP~GM6G-oAbeMlphTiA-lZkVUFzLwrx~bhj0dv5ttqgT83BoyYMdEJVBgX4IsDjEkI6a1SaURsBHo28VWQhAVLr2qByTuamQ~EQdZwiEV5bj75n-iOLfuSGMGOKBv46Oyh5PCZ0L2nYRoTJBlGD60rws313HOSTTr8qeha83AvI1uOMGkzGGGTAscX4ebWl7oicSkFrNDF~BrWFcDPsVvZhjQeNCYDqPybGv8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      menuFor: "Drinks",
+    },
+    {
+      id: 3,
+      menuPoster:
+        "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1687737600&Signature=QY7zpBvoF1nsAxi3wxLkpomH3kLsFYJQIYSqPEgzOWaGmUfKkGjvZYq7XaAVagW-G9WQTKfLaDoSR1tp7GbHUt1TBeu5H3Kziv~VEd8tpEn4EsQpmP~GM6G-oAbeMlphTiA-lZkVUFzLwrx~bhj0dv5ttqgT83BoyYMdEJVBgX4IsDjEkI6a1SaURsBHo28VWQhAVLr2qByTuamQ~EQdZwiEV5bj75n-iOLfuSGMGOKBv46Oyh5PCZ0L2nYRoTJBlGD60rws313HOSTTr8qeha83AvI1uOMGkzGGGTAscX4ebWl7oicSkFrNDF~BrWFcDPsVvZhjQeNCYDqPybGv8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      menuFor: "Main Course",
+    },
+    {
+      id: 4,
+      menuPoster:
+        "https://s3-alpha-sig.figma.com/img/e3e4/1fd9/ae99026fe7b801656b1ba2509deddb71?Expires=1687737600&Signature=QY7zpBvoF1nsAxi3wxLkpomH3kLsFYJQIYSqPEgzOWaGmUfKkGjvZYq7XaAVagW-G9WQTKfLaDoSR1tp7GbHUt1TBeu5H3Kziv~VEd8tpEn4EsQpmP~GM6G-oAbeMlphTiA-lZkVUFzLwrx~bhj0dv5ttqgT83BoyYMdEJVBgX4IsDjEkI6a1SaURsBHo28VWQhAVLr2qByTuamQ~EQdZwiEV5bj75n-iOLfuSGMGOKBv46Oyh5PCZ0L2nYRoTJBlGD60rws313HOSTTr8qeha83AvI1uOMGkzGGGTAscX4ebWl7oicSkFrNDF~BrWFcDPsVvZhjQeNCYDqPybGv8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      menuFor: "Desserts",
+    },
+  ],
+};
 
 export {homeBestSellersDemo, homeHappyCustomers, galleryBox, bestSellers, liveEvents, menu};
