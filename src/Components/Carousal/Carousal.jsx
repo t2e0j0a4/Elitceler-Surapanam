@@ -3,18 +3,20 @@ import styles from "./Carousal.module.css";
 
 const Carousal = ({ source, type }) => {
     
-    const { app__carousal, carousal__img, carousal__fimg, carousal__simg, carousal__tips, item__tip, tip__selected } = styles;
+    const { app__carousal, carousal__img, carousal__fimg, carousal__simg, carousal__tips, item__tip, tip__selected, toggle__btns } = styles;
     const [sourceLength] = useState(source.length);
     const [current, setCurrent] = useState(0);
 
     useEffect(() => {
-        const intervalID = setInterval(() => {setCurrent((now) => now + 1 === sourceLength ? 0 : now + 1)}, 3000);
+        const intervalID = setInterval(() => {setCurrent((now) => now + 1 === sourceLength ? 0 : now + 1)}, 4000);
         return (() => clearInterval(intervalID));
         // eslint-disable-next-line
     }, [current]);
 
     return (
         <div className={app__carousal}>
+
+            {/* Images Show */}
             <div className={`${type === 'fullfill' ? carousal__fimg : carousal__simg} ${carousal__img}`}>
                 <img src={source[current].image} alt='Carousal' />
             </div>
@@ -28,6 +30,12 @@ const Carousal = ({ source, type }) => {
                         )
                     })
                 }
+            </div>
+
+            {/* Togglers Buttons */}
+            <div className={toggle__btns}>
+                <button type='button' title='Prev'><ion-icon name="chevron-back"></ion-icon></button>
+                <button type='button' title='Next'><ion-icon name="chevron-forward"></ion-icon></button>
             </div>
 
         </div>
