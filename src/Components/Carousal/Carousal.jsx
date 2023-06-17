@@ -13,6 +13,16 @@ const Carousal = ({ source, type }) => {
         // eslint-disable-next-line
     }, [current]);
 
+    const toggleCarousal = (role) => {
+        if (role === 'next') {
+            setCurrent((now) => (now + 1 === sourceLength ? 0 : now + 1));
+        }
+
+        else {
+            setCurrent((now) => (now === 0 ? sourceLength - 1 : now - 1));
+        }
+    }
+
     return (
         <div className={app__carousal}>
 
@@ -34,8 +44,8 @@ const Carousal = ({ source, type }) => {
 
             {/* Togglers Buttons */}
             <div className={toggle__btns}>
-                <button type='button' title='Prev'><ion-icon name="chevron-back"></ion-icon></button>
-                <button type='button' title='Next'><ion-icon name="chevron-forward"></ion-icon></button>
+                <button type='button' title='Prev' onClick={() => {toggleCarousal('prev')}} ><ion-icon name="chevron-back"></ion-icon></button>
+                <button type='button' title='Next' onClick={() => {toggleCarousal('next')}} ><ion-icon name="chevron-forward"></ion-icon></button>
             </div>
 
         </div>
