@@ -21,7 +21,7 @@
 
 @media all and (min-width : 1400px) {
     .carousal__fimg img {
-        height: 80vh;
+        height: 90vh;
     }
 
     .carousal__simg img {
